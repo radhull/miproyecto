@@ -1,0 +1,37 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "project": {
+        "name": "@coreui/angular"
+    },
+    "apps": [
+        {
+            "root": "src",
+            "outDir": "dist",
+            "assets": ["assets"],
+            "index": "index.html",
+            "main": "main.ts",
+            "polyfills": "polyfills.ts",
+            "tsconfig": "tsconfig.app.json",
+            "prefix": "app",
+            "styles": [
+                "../node_modules/font-awesome/css/font-awesome.css",
+                "../node_modules/simple-line-icons/css/simple-line-icons.css",
+                "scss/style.scss"
+            ],
+            "scripts": [],
+            "environmentSource": "environments/environment.ts",
+            "environments": {
+                "dev": "environments/environment.ts",
+                "prod": "environments/environment.prod.ts"
+            }
+        }
+    ],
+    "lint": [
+        {
+            "project": "src/tsconfig.app.json"
+        }
+    ],
+    "defaults": {
+        "styleExt": "scss"
+    }
+}
